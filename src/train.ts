@@ -1,14 +1,38 @@
-// TASK-H
 
-function musbatSonlar(arr: number[]): string 
-    {
-        const musbatQiymatlar = arr.filter(num => num > 0);
-        const natija = musbatQiymatlar.join('');
-        return natija;
-    }
+/*Project standarts:
+    -Logging standarts
+    -Naming standarts 
+        function, method, variable => Camel     goHome
+        class => Paskal                         MemberService
+        folder => Kebab                         router-admin
+        css => SNAKE                            button_style
+    
+    -Error handling
+*/
 
-    console.log(musbatSonlar([1, -4, 2]));
-    console.log(musbatSonlar([21, 14, -6]));
+
+
+
+
+
+
+
+
+
+
+
+
+// // TASK-H
+
+// function musbatSonlar(arr: number[]): string 
+//     {
+//         const musbatQiymatlar = arr.filter(num => num > 0);
+//         const natija = musbatQiymatlar.join('');
+//         return natija;
+//     }
+
+//     console.log(musbatSonlar([1, -4, 2]));
+//     console.log(musbatSonlar([21, 14, -6]));
 
 
 
