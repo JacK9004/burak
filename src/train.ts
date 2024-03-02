@@ -11,6 +11,30 @@
 */
 
 
+/*
+Traditional API
+Rest API
+GraphQL API
+...
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
