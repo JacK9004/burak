@@ -1,3 +1,59 @@
+// //TASK - I
+
+// function raqamlarniOlish(str: string): string {
+//     return str.match(/\d/g)!.join(''); 
+//                        //\d - Bu regular expression patterni barcha raqamlarni ifodalaydi.
+//                        //g - Bu flag, barcha raqamlarni qidirish uchun global qidirishni belgilaydi.
+
+// }
+
+// console.log(raqamlarniOlish("m14i1t"));
+// console.log(raqamlarniOlish("Salom11"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Project standarts:
     -Logging standarts
