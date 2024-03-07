@@ -2,8 +2,8 @@
 
 // function raqamlarniOlish(str: string): string {
 //     return str.match(/\d/g)!.join(''); 
-//                        //\d - Bu regular expression patterni barcha raqamlarni ifodalaydi.
-//                        //g - Bu flag, barcha raqamlarni qidirish uchun global qidirishni belgilaydi.
+//                             //\d - Bu regular expression patterni barcha raqamlarni ifodalaydi.
+//                             //g - Bu flag, barcha raqamlarni qidirish uchun global qidirishni belgilaydi.
 
 // }
 
@@ -67,7 +67,7 @@
 */
 
 
-/*
+/* API 
 Traditional API
 Rest API
 GraphQL API
@@ -77,6 +77,11 @@ GraphQL API
 
 
 
+/* FrontEnd ikki xil usulda develop qilinadi
+
+Traditional FD  => BSSR (Backend Server Side Rendering)(ADMIN project)  => EJS freamwork orqali amalga oshiriladi
+Modern FD       => SPA  (Singe Page Application) {User application}     => REACT freamwork orqali amalga oshiriladi
+*/
 
 
 
