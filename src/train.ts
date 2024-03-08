@@ -1,14 +1,21 @@
-// //TASK - I
+// TASK-J
 
-// function raqamlarniOlish(str: string): string {
-//     return str.match(/\d/g)!.join(''); 
-//                             //\d - Bu regular expression patterni barcha raqamlarni ifodalaydi.
-//                             //g - Bu flag, barcha raqamlarni qidirish uchun global qidirishni belgilaydi.
+function findLongestWord(sentence: string): string {
+    const words = sentence.split(" ");
+    let longestWord = "";
 
-// }
+    for (const word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
 
-// console.log(raqamlarniOlish("m14i1t"));
-// console.log(raqamlarniOlish("Salom11"));
+    return longestWord;
+}
+
+// Call
+console.log(findLongestWord("I come from Uzbekistan"));
+
 
 
 
@@ -88,25 +95,6 @@ Modern FD       => SPA  (Singe Page Application) {User application}     => REACT
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // TASK-H
 
 // function musbatSonlar(arr: number[]): string 
@@ -118,6 +106,42 @@ Modern FD       => SPA  (Singe Page Application) {User application}     => REACT
 
 //     console.log(musbatSonlar([1, -4, 2]));
 //     console.log(musbatSonlar([21, 14, -6]));
+
+// //TASK - I
+
+// function raqamlarniOlish(str: string): string {
+//     return str.match(/\d/g)!.join(''); 
+//                             //\d - Bu regular expression patterni barcha raqamlarni ifodalaydi.
+//                             //g - Bu flag, barcha raqamlarni qidirish uchun global qidirishni belgilaydi.
+
+// }
+
+// console.log(raqamlarniOlish("m14i1t"));
+// console.log(raqamlarniOlish("Salom11"));
+
+
+// // TASK-H
+
+// function teskariOqish(a: string): string {
+//     return a.split('').reverse().join('');
+// }
+
+// console.log(teskariOqish("jushkin"));
+// console.log(teskariOqish("hello"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,11 +174,3 @@ Modern FD       => SPA  (Singe Page Application) {User application}     => REACT
 
 
 
-// // TASK-H
-
-// function teskariOqish(a: string): string {
-//     return a.split('').reverse().join('');
-// }
-
-// console.log(teskariOqish("jushkin"));
-// console.log(teskariOqish("hello"));
