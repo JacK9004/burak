@@ -1,20 +1,14 @@
-// TASK-J
+// TASK K
 
-function findLongestWord(sentence: string): string {
-    const words = sentence.split(" ");
-    let longestWord = "";
-
-    for (const word of words) {
-        if (word.length > longestWord.length) {
-            longestWord = word;
-        }
-    }
-
-    return longestWord;
+function countVowels(str: string): number {
+    const matches = str.match(/[aeiou]/gi);
+    return matches ? matches.length : 0;
 }
 
 // Call
-console.log(findLongestWord("I come from Uzbekistan"));
+console.log(countVowels("football")); 
+console.log(countVowels("string")); 
+
 
 
 
@@ -93,6 +87,19 @@ Modern FD       => SPA  (Singe Page Application) {User application}     => REACT
 
 
 
+/* AUTHINTIFICATION SESSIONS
+request join
+self destroy
+*/
+
+
+
+
+
+
+
+
+
 
 
 // // TASK-H
@@ -130,7 +137,23 @@ Modern FD       => SPA  (Singe Page Application) {User application}     => REACT
 // console.log(teskariOqish("hello"));
 
 
+// // TASK-J
 
+// function findLongestWord(sentence: string): string {
+//     const words = sentence.split(" ");
+//     let longestWord = "";
+
+//     for (const word of words) {
+//         if (word.length > longestWord.length) {
+//             longestWord = word;
+//         }
+//     }
+
+//     return longestWord;
+// }
+
+// // Call
+// console.log(findLongestWord("I come from Uzbekistan"));
 
 
 
