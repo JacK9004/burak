@@ -68,7 +68,7 @@ console.log(countVowels("string"));
 */
 
 
-/* API 
+/* API request:
 Traditional API
 Rest API
 GraphQL API
@@ -93,7 +93,12 @@ self destroy
 */
 
 
-
+/* VALIDATION
+FrontEnd validation
+Backend validation
+Database validation
+pipe frontend va backent oraligidagi validation
+*/
 
 
 
