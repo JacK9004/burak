@@ -1,14 +1,17 @@
-// TASK K
+// TASK-L
 
-function countVowels(str: string): number {
-    const matches = str.match(/[aeiou]/gi);
-    return matches ? matches.length : 0;
+function reverseSentence(sentence: string): string {
+    const words = sentence.split(" ");
+    
+    const reversedWords = words.map(word => {
+        return word.split('').reverse().join('');
+    });
+    
+    return reversedWords.join(" ");
 }
 
-// Call
-console.log(countVowels("football")); 
-console.log(countVowels("string")); 
-
+// CALL
+console.log(reverseSentence("I love my family!")); 
 
 
 
@@ -160,6 +163,18 @@ pipe frontend va backent oraligidagi validation
 // // Call
 // console.log(findLongestWord("I come from Uzbekistan"));
 
+
+
+// // TASK K
+
+// function countVowels(str: string): number {
+//     const matches = str.match(/[aeiou]/gi);
+//     return matches ? matches.length : 0;
+// }
+
+// // Call
+// console.log(countVowels("football")); 
+// console.log(countVowels("string")); 
 
 
 
