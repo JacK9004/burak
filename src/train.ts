@@ -1,17 +1,20 @@
-// TASK-L
+// TASK_M
 
-function reverseSentence(sentence: string): string {
-    const words = sentence.split(" ");
-    
-    const reversedWords = words.map(word => {
-        return word.split('').reverse().join('');
+function getSquareNumbers(array: number[]): { number: number, square: number }[] {
+    return array.map((number: number) => {
+        return {
+            number: number,
+            square: number * number
+        };
     });
-    
-    return reversedWords.join(" ");
 }
 
 // CALL
-console.log(reverseSentence("I love my family!")); 
+console.log(getSquareNumbers([3, 4, 5])); 
+
+
+
+
 
 
 
@@ -179,7 +182,20 @@ pipe frontend va backent oraligidagi validation
 
 
 
+// TASK-L
 
+function reverseSentence(sentence: string): string {
+    const words = sentence.split(" ");
+    
+    const reversedWords = words.map(word => {
+        return word.split('').reverse().join('');
+    });
+    
+    return reversedWords.join(" ");
+}
+
+// CALL
+console.log(reverseSentence("I love my family!")); 
 
 
 
