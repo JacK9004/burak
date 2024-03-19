@@ -1,19 +1,22 @@
-// TASK_M
+// TASK-N
 
-function getSquareNumbers(array: number[]): { number: number, square: number }[] {
-    return array.map((number: number) => {
-        return {
-            number: number,
-            square: number * number
-        };
-    });
+function palindromeCheck(str: string): boolean {
+    // Raqam va harflarni ajratib olib, faqat harflarni qoldiramiz va katta-kichik harflarga aylantiramiz
+    const cleanStr: string = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    
+    // Chapdan va o'ngdan belgilarni solishtirib chiqamiz
+    for (let i: number = 0; i < cleanStr.length / 2; i++) {
+        if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true; 
 }
 
 // CALL
-console.log(getSquareNumbers([3, 4, 5])); 
-
-
-
+console.log(palindromeCheck("dad")); 
+console.log(palindromeCheck("number")); 
+console.log(palindromeCheck("aziza")); 
 
 
 
@@ -184,18 +187,33 @@ pipe frontend va backent oraligidagi validation
 
 // TASK-L
 
-function reverseSentence(sentence: string): string {
-    const words = sentence.split(" ");
+// function reverseSentence(sentence: string): string {
+//     const words = sentence.split(" ");
     
-    const reversedWords = words.map(word => {
-        return word.split('').reverse().join('');
-    });
+//     const reversedWords = words.map(word => {
+//         return word.split('').reverse().join('');
+//     });
     
-    return reversedWords.join(" ");
-}
+//     return reversedWords.join(" ");
+// }
 
-// CALL
-console.log(reverseSentence("I love my family!")); 
+// // CALL
+// console.log(reverseSentence("I love my family!")); 
+
+
+// // TASK_M
+
+// function getSquareNumbers(array: number[]): { number: number, square: number }[] {
+//     return array.map((number: number) => {
+//         return {
+//             number: number,
+//             square: number * number
+//         };
+//     });
+// }
+
+// // CALL
+// console.log(getSquareNumbers([3, 4, 5])); 
 
 
 
