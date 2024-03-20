@@ -1,26 +1,20 @@
-// TASK-N
-
-function palindromeCheck(str: string): boolean {
-    // Raqam va harflarni ajratib olib, faqat harflarni qoldiramiz va katta-kichik harflarga aylantiramiz
-    const cleanStr: string = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    
-    // Chapdan va o'ngdan belgilarni solishtirib chiqamiz
-    for (let i: number = 0; i < cleanStr.length / 2; i++) {
-        if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
-            return false;
+// TASK-O
+function calculateSumOfNumbers(arr: (number | string | { number: number } | boolean)[]): number {
+    let sum: number = 0;
+    for (let i: number = 0; i < arr.length; i++) {
+        const value = arr[i];
+        if (typeof value === 'number' || (typeof value === 'string' && !isNaN(parseFloat(value)))) {
+            sum += parseFloat(value as string);
+        } else if (typeof value === 'object' && 'number' in value) {
+            sum += value.number;
         }
     }
-    return true; 
+    return sum;
 }
 
-// CALL
-console.log(palindromeCheck("dad")); 
-console.log(palindromeCheck("number")); 
-console.log(palindromeCheck("aziza")); 
-
-
-
-
+// Example usage:
+console.log(calculateSumOfNumbers([10, "10", {number: 10}, true, 35])); 
+console.log(calculateSumOfNumbers([20, "20", {number: 20}, true, 45]));
 
 
 
@@ -216,7 +210,25 @@ pipe frontend va backent oraligidagi validation
 // console.log(getSquareNumbers([3, 4, 5])); 
 
 
+// // TASK-N
 
+// function palindromeCheck(str: string): boolean {
+//     // Raqam va harflarni ajratib olib, faqat harflarni qoldiramiz va katta-kichik harflarga aylantiramiz
+//     const cleanStr: string = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    
+//     // Chapdan va o'ngdan belgilarni solishtirib chiqamiz
+//     for (let i: number = 0; i < cleanStr.length / 2; i++) {
+//         if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+//             return false;
+//         }
+//     }
+//     return true; 
+// }
+
+// // CALL
+// console.log(palindromeCheck("dad")); 
+// console.log(palindromeCheck("number")); 
+// console.log(palindromeCheck("aziza")); 
 
 
 
