@@ -3,7 +3,7 @@ console.log("Users frontend javascript file");
 $(function () {
     $(".member-status").on("change", function (e) {
         const id = e.target.id;
-        console.log("id: ", id);
+        // console.log("id: ", id);
 
         const memberStatus = $(`#${id}.member-status`).val();
         console.log("memberStatus: ",  memberStatus);
@@ -17,7 +17,7 @@ $(function () {
     .then((response) => {
         console.log("response:", response);
         const result = response.data;
-        console.log("result: ", result);
+        // console.log("result: ", result);
 
         if (result.data) {
             console.log("User updated successfully!");

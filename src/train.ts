@@ -1,20 +1,12 @@
-// TASK-O
-function calculateSumOfNumbers(arr: (number | string | { number: number } | boolean)[]): number {
-    let sum: number = 0;
-    for (let i: number = 0; i < arr.length; i++) {
-        const value = arr[i];
-        if (typeof value === 'number' || (typeof value === 'string' && !isNaN(parseFloat(value)))) {
-            sum += parseFloat(value as string);
-        } else if (typeof value === 'object' && 'number' in value) {
-            sum += value.number;
-        }
-    }
-    return sum;
+//TASK_P
+interface T {
+    [key: string]: any;
 }
-
-// Example usage:
-console.log(calculateSumOfNumbers([10, "10", {number: 10}, true, 35])); 
-console.log(calculateSumOfNumbers([20, "20", {number: 20}, true, 45]));
+function objectToArray (obj: T){
+    const keys = Object.keys(obj).map(key => [key, obj[key]]);
+    console.log(keys);
+}
+objectToArray({a: 1, b: 2});
 
 
 
@@ -231,7 +223,23 @@ pipe frontend va backent oraligidagi validation
 // console.log(palindromeCheck("aziza")); 
 
 
+// // TASK-O
+// function calculateSumOfNumbers(arr: (number | string | { number: number } | boolean)[]): number {
+//     let sum: number = 0;
+//     for (let i: number = 0; i < arr.length; i++) {
+//         const value = arr[i];
+//         if (typeof value === 'number' || (typeof value === 'string' && !isNaN(parseFloat(value)))) {
+//             sum += parseFloat(value as string);
+//         } else if (typeof value === 'object' && 'number' in value) {
+//             sum += value.number;
+//         }
+//     }
+//     return sum;
+// }
 
+// // Example usage:
+// console.log(calculateSumOfNumbers([10, "10", {number: 10}, true, 35])); 
+// console.log(calculateSumOfNumbers([20, "20", {number: 20}, true, 45]));
 
 
 
