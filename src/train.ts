@@ -1,12 +1,17 @@
-//TASK_P
-interface T {
+// TASK-Q
+
+interface AnyObject {
     [key: string]: any;
 }
-function objectToArray (obj: T){
-    const keys = Object.keys(obj).map(key => [key, obj[key]]);
-    console.log(keys);
+
+function hasProperty(obj: AnyObject, property: string): boolean {
+    return obj.hasOwnProperty(property);
 }
-objectToArray({a: 1, b: 2});
+
+// Test cases
+console.log(hasProperty({ name: "Tesla", model: "M3" }, "model")); 
+console.log(hasProperty({ name: "Tesla", model: "M3" }, "books"));  
+
 
 
 
@@ -241,7 +246,15 @@ pipe frontend va backent oraligidagi validation
 // console.log(calculateSumOfNumbers([10, "10", {number: 10}, true, 35])); 
 // console.log(calculateSumOfNumbers([20, "20", {number: 20}, true, 45]));
 
-
+// //TASK_P
+// interface T {
+//     [key: string]: any;
+// }
+// function objectToArray (obj: T){
+//     const keys = Object.keys(obj).map(key => [key, obj[key]]);
+//     console.log(keys);
+// }
+// objectToArray({a: 1, b: 2});
 
 
 
