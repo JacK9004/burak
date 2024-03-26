@@ -1,16 +1,15 @@
-// TASK-Q
+// TASK-R
 
-interface AnyObject {
-    [key: string]: any;
+function calculate(str: string): number {
+   const numbers: number[] = str.split('+').map(Number);
+   const sum: number = numbers.reduce((acc: number, num: number) => acc + num, 0);
+    
+    return sum;
 }
 
-function hasProperty(obj: AnyObject, property: string): boolean {
-    return obj.hasOwnProperty(property);
-}
+//Call
+console.log(calculate("3+6")); 
 
-// Test cases
-console.log(hasProperty({ name: "Tesla", model: "M3" }, "model")); 
-console.log(hasProperty({ name: "Tesla", model: "M3" }, "books"));  
 
 
 
@@ -256,7 +255,19 @@ pipe frontend va backent oraligidagi validation
 // }
 // objectToArray({a: 1, b: 2});
 
+// // TASK-Q
 
+// interface AnyObject {
+//     [key: string]: any;
+// }
+
+// function hasProperty(obj: AnyObject, property: string): boolean {
+//     return obj.hasOwnProperty(property);
+// }
+
+// // Test cases
+// console.log(hasProperty({ name: "Tesla", model: "M3" }, "model")); 
+// console.log(hasProperty({ name: "Tesla", model: "M3" }, "books"));  
 
 
 
